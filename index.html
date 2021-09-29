@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <section class="content-container">
+            <h1 class="title">Learn to code by watching others</h1>
+            <p class="main-text">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </section>
+
+        <section class="sign-up-conainer">
+            <div class="banner-free-seven">
+                <p>
+                    <span id="free-bold">Try it free 7 days</span>
+                    <span id="free-light">then $20/mo. thereafter</span>
+                </p>
+            </div>
+
+            <div class="from-container">
+                <form class="sign-up-form" id="form-sign-up">
+                    <!-- action="" method="post" -->
+                    <input type="text" name="input-first-name" id="input-first-name" placeholder="First Name" class="input-style">
+                    <label id="error-first-name" class="error"></label>
+                    <!---->
+                    <input type="text" name="input-last-name" id="input-last-name" placeholder="Last Name" class="input-style">
+                    <label id="error-last-name" class="error"></label>
+
+                    <input type="email" name="input-email" id="input-email" placeholder="Email Address" class="input-style">
+                    <label id="error-email" class="error"></label>
+                    <!---->
+                    <input type="password" name="input-password" id="input-password" placeholder="Password" class="input-style">
+                    <label id="error-password" class="error"></label>
+                    <!---->
+                    <input type="submit" name="" value=" Claim your free trial " class="btn-free-trial">
+                </form>
+                <p class="term-text">
+                    <span id="term-light">By clicking the button, you are agreeing to our</span>
+                    <span id="term-bold">Terms and Services</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/maym42" target="_blank">Maayan</a>.
+        </p>
+    </footer>
+    <script src="scripts/index.js">
+    </script>
+</body>
+
+</html>

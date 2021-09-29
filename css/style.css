@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    /*### Primary*/
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Dark-Green: #2fbb7c;
+    /*### Accent*/
+    --Blue: hsl(248, 32%, 49%);
+    --radius: 10px;
+    /*### Mobile: width 375px height 1000px ###*/
+    /*one vw in moblie = 3.75px*/
+    --one-vw-m: 3.75;
+    /*one vh in moblie = 10px*/
+    --one-vh-m: 10;
+    /*### Desktop: width 1440px height 800px ###*/
+    /*one vw in moblie = 14.40px*/
+    --one-vw-d: 14.40;
+    /*one vh in moblie = 8px*/
+    --one-vh-d: 8;
+}
+
+body {
+    background-color: var(--Red);
+    /*image*/
+    background-image: url(../images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*size*/
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    /*text*/
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main-container {
+    /*space*/
+    margin-left: calc((24/var(--one-vw-m))*1vw);
+    margin-right: calc((24/var(--one-vw-m))*1vw);
+    margin-top: calc((98/var(--one-vh-m))*1vh);
+}
+
+
+/*~~~Web Text~~~*/
+
+.title {
+    /*space*/
+    margin-bottom: calc((28/var(--one-vh-m))*1vh);
+    padding-left: calc((41/var(--one-vw-m))*1vw);
+    padding-right: calc((41/var(--one-vw-m))*1vw);
+    /*text*/
+    font-size: 28px;
+    color: white;
+}
+
+.main-text {
+    opacity: 0.9;
+    /*space*/
+    margin-bottom: calc((70/var(--one-vh-m))*1vh);
+    /*text*/
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/*~~~Banner~~~*/
+
+.banner-free-seven {
+    border-radius: var(--radius);
+    background-color: var(--Blue);
+    /*box-shadow*/
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
+    /*space*/
+    margin-bottom: 24px;
+    padding-left: calc((70/var(--one-vw-m))*1vw);
+    padding-right: calc((70/var(--one-vw-m))*1vw);
+    padding-top: calc((26/var(--one-vh-m))*1vh);
+    padding-bottom: calc((21/var(--one-vh-m))*1vh);
+    /*text*/
+    color: white;
+}
+
+.banner-free-seven p {
+    /*space*/
+    margin: 0;
+    /*text*/
+    font-weight: 400;
+}
+
+#free-bold {
+    font-weight: 600;
+}
+
+#free-light {
+    opacity: 0.7;
+}
+
+
+/*~~~Form~~~*/
+
+.from-container {
+    background-color: white;
+    border-radius: var(--radius);
+    /*box-shadow*/
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
+    /*space*/
+    padding-left: calc((24/var(--one-vw-m))*1vw);
+    padding-right: calc((24/var(--one-vw-m))*1vw);
+    padding-top: calc((4/var(--one-vh-m))*1vh);
+    padding-bottom: calc((30/var(--one-vh-m))*1vh);
+}
+
+.input-style {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    caret-color: var(--Blue);
+    /*size*/
+    width: 100%;
+    box-sizing: border-box;
+    /*space*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.input-style:focus {
+    outline: none !important;
+    border: 2px solid var(--Blue);
+    /*text*/
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-style::placeholder {
+    /*text*/
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-warning-style {
+    border: 2px solid var(--Red);
+    background: white url(../images/icon-error.svg) right no-repeat;
+    background-position: 95%;
+}
+
+.error {
+    color: var(--Red);
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 5px;
+    font-style: italic;
+    text-align: right;
+    display: block;
+}
+
+
+/*~~~Submit btn~~~*/
+
+.btn-free-trial {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--Green);
+    white-space: normal;
+    /*box-shadow*/
+    box-shadow: 0px 4px var(--Dark-Green);
+    /*size*/
+    width: 100%;
+    box-sizing: border-box;
+    /*space*/
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+    /*text*/
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-free-trial:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn-free-trial:focus {
+    outline: none !important;
+}
+
+
+/*~~~Fine print~~~*/
+
+.term-text {
+    /*space*/
+    margin: 0;
+    padding-left: calc((24/var(--one-vw-m))*1vw);
+    padding-right: calc((24/var(--one-vw-m))*1vw);
+    /*text*/
+    color: lightslategray;
+    line-height: 2;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+#term-light {
+    opacity: 0.6;
+}
+
+#term-bold {
+    /*text*/
+    color: var(--Red);
+    font-weight: 700;
+}
+
+
+/*~~~Frontend Mentor~~~*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: white;
+}
+
+
+/*########## Desktop ##########*/
+
+@media only screen and (min-width: 750px)and (min-height: 450px) {
+    body {
+        /*image*/
+        background-image: url(../images/bg-intro-desktop.png);
+        background-size: cover;
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-container {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        /*space*/
+        margin-top: calc((120/var(--one-vh-d))*1vh);
+        margin-bottom: calc((112/var(--one-vh-d))*1vh);
+        margin-left: calc((160/var(--one-vw-d))*1vw);
+        margin-right: calc((160/var(--one-vw-d))*1vw);
+        /*size*/
+        width: calc((1114/var(--one-vw-d))*1vw);
+    }
+    .content-container {
+        flex: 50%;
+        /*space*/
+        margin-right: calc((60/var(--one-vw-d))*1vw);
+        /*text*/
+        text-align: left;
+    }
+    .title {
+        /*space*/
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        /*text*/
+        font-size: 48px;
+        line-height: 1.15;
+    }
+    .banner-free-seven {
+        padding: 0;
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+    .from-container {
+        /*space*/
+        padding: 40px;
+        padding-top: 20px;
+        /*size*/
+        min-width: calc((534/var(--one-vw-d))*1vw);
+    }
+    .term-text {
+        padding: 0;
+    }
+}
